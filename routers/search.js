@@ -5,24 +5,26 @@ var https = require('https');
 var env = require('dotenv').config();
 var bodyParser = require('body-parser');
 
+
 router.get("/", function(req, resp, next){
-		getData(receiveData);
+    getData(receiveData);
 
-		function receiveData(data){
+    function receiveData(data){
 
-	   resp.render('home',{data:data});
-		}
+     resp.render('home',{data:data});
+    }
 });
 
+
 function getData(recieve){
-	  https.get('https://www.rijksmuseum.nl/api/nl/collection/?key='+process.env.API_KEY+'&format=json&q=', function (res) {
-		res.pipe(concat(callback));
+    https.get('https://www.rijksmuseum.nl/api/nl/collection/?key=' + process.env.API_KEY + '&format=json&q=', function (res) {
+    res.pipe(concat(callback));
 
-	   	function callback(argument) {
+       function callback(argument) {
 
-				var data = JSON.parse(argument);
-				recieve(data);
-	   	}
-	});
+        var data = JSON.parse(argument);
+        recieve(data);
+       }
+  });
 }
 module.exports = router;

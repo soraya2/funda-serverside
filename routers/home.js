@@ -6,41 +6,40 @@ var env = require('dotenv').config();
 
 
 router.get("/", function(req, resp, next){
-		getData(receiveData, '');
+    getData(receiveData, '');
 
-		function receiveData(data){
+    function receiveData(data){
 
-	   resp.render('home',{data:data});
-		}
+     resp.render('home',{data:data});
+    }
 });
+
 
 router.post("/", function(req, resp){
-	getData(receiveData, req.body.search.value);
 
-		function receiveData(data){
+  getData(receiveData, req.body.search.value);
 
-	   resp.render('home',{data:data});
-		}
+    function receiveData(data){
 
+     resp.render('home',{data:data});
+
+    }
 });
-
 
 
 function getData(recieve, value){
 
-	  https.get('https://www.rijksmuseum.nl/api/nl/collection/?key='+process.env.API_KEY+'&format=json&q='+value, function (res) {
-		res.pipe(concat(callback));
+    https.get('https://www.rijksmuseum.nl/api/nl/collection/?key='+process.env.API_KEY+'&format=json&q='+value, function (res) {
+    res.pipe(concat(callback));
 
-	   	function callback(argument) {
+    function callback(argument) {
 
-				var data = JSON.parse(argument);
-				recieve(data);
-	   	}
-	});
+      var data = JSON.parse(argument);
+      recieve(data);
+
+    }
+  });
 }
-
-
-
 
 module.exports = router;
 
