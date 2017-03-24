@@ -1,6 +1,7 @@
 //css grid
 // #ff5858 red color
-html , body{
+
+html , body {
 	width: 100%;
 	height: 100%;
 }
@@ -14,13 +15,10 @@ html , body{
   vertical-align: baseline;
 }
 
-
-
 html {
 	font-family:'Open Sans', Helvetica;
 	font-size:18px;
 }
-
 
 body {
 	font-family: "Helvetica Neue", "Helvetica",sans-serif;
@@ -32,7 +30,7 @@ ul, ol{
 	list-style-position: inside;
 }
 
-body > section{
+body > section {
 	width: 100%;
 }
 
@@ -46,12 +44,12 @@ nav > ul {
 	display: flex;
 }
 
-nav > ul > li{
+nav > ul > li {
 	list-style-type: none;
 	padding: 1rem 1.2rem;
 }
 
-nav > ul > li a{
+nav > ul > li a {
 	text-decoration: none;
 	color: var(--color);
 	white-space: nowrap;
@@ -67,7 +65,7 @@ h1 {
 	margin-bottom: 1rem;
 }
 
-form{
+form {
   display: flex;
   align-items: center;
   height: 3.5em;
@@ -75,14 +73,14 @@ form{
   max-width: 65em;
 }
 
-img{
+img {
 	width: 80%;
 }
 
-p{
+p {
 	text-align: center;
 }
-.hide{
+.hide {
 	display: none;
 }
 
@@ -102,7 +100,7 @@ p{
 	transition:color .3s, background-color .3s, border .3s;
 }
 
-.button:hover, .button:focus{
+.button:hover, .button:focus {
 		outline: none;
 		background-color: rgba(255, 88, 88, .9);
 		color: #ffffff;
@@ -112,29 +110,26 @@ p{
 		word-spacing: 1rem;
 }
 
-input[type='text']:focus, input[type='text']:hover{
+input[type='text']:focus, input[type='text']:hover {
 	// box-shadow: 0 0 5px 1px rgba(243, 49, 85, 0.8);
-
 }
 
-
-main{
+main {
 	padding: 2em 1em 2em;
 }
 
-main > section{
+main > section {
 	font-weight: 100;
 }
 
-input[type='text']{
+input[type='text'] {
 	  width: 80%;
     height: inherit;
     border: 0.1rem solid rgba(255, 88, 88, 1);
     padding: 0 .5em;
 }
 
-
-input[type='text']:focus, input[type='text']:hover{
+input[type='text']:focus, input[type='text']:hover {
 	  background: rgba(255, 88, 88, 0.3);
     color: inherit;
     font-weight: 300;
@@ -143,14 +138,14 @@ input[type='text']:focus, input[type='text']:hover{
 		outline: none;
 	}
 
-// #painting-overview{
+// #painting-overview {
 // 	display: none;
 // }
 
-a div{
+a div {
 	width: fit-content;
 }
-.item{
+.item {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 40vw;
@@ -159,30 +154,29 @@ a div{
 	background-color: #d3d3d3;
 }
 
-#home{
-    // display: block;
-    margin: 0 auto;
-    max-width: 67em;
+#home {
+  // display: block;
+  margin: 0 auto;
+  max-width: 67em;
 }
 
-#painting-details{
+#painting-details {
 	display: flex;
 }
 
-#painting-overview{
+#painting-overview {
   display: inline-flex;
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 67em;
 }
 
-#home-overview{
+#home-overview {
 	display: flex;
 	flex-wrap: wrap;
-
 }
 
-#home-overview div{
+#home-overview div {
     width: 40vw;
     box-shadow: 1px 1px 5px lightgrey;
     margin: 0.5em;
