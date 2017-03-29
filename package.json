@@ -12,8 +12,13 @@
     "url": "https://github.com/soraya2/funda-serverside.git"
   },
   "keywords": [
-    "''"
+    "node",
+    "rijksmuseum"
   ],
+  "engines":{
+    "node": "5.7.0"
+
+  },
   "author": "Soraya Ibrahim",
   "license": "MIT",
   "bugs": {
@@ -29,6 +34,7 @@
     "body-parser": "^1.17.1",
     "browserify": "^14.1.0",
     "concat-stream": "^1.6.0",
-    "dotenv": "^4.0.0"
+    "dotenv": "^4.0.0",
+    "watchify": "^3.9.0"
   }
 }

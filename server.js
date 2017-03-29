@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var home = require('./routers/home');
 var details = require('./routers/details');
 
+app.set('port', (process.env.PORT || 3005))
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
@@ -34,6 +35,6 @@ app.use('/details', details);
 app.use('/search', home);
 
 
-app.listen(3000, function(){
-  console.log('App listening at port: 3000');
+app.listen(app.get('port'), function(){
+  console.log('App listening at port:', app.get('port') );
 });
