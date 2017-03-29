@@ -2,7 +2,7 @@
 With this app you can look for art inside the Rijksmuseum collection.
 
 ## Getting started
-Start by cloning the repo with de git command inside the turminal and so you have a local copy of this project.
+Start by cloning the repo with de git command inside the terminal and so you have a local copy of this project.
 
     git clone https://github.com/soraya2/rijksmuseum_serverside.git
 
