@@ -12,7 +12,7 @@ This wil install all the project dependencies
 
 ### Npm install 
 
-##  Start the project
+###  Start the project
 This command will wil run the application.
 
 npm start
