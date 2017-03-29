@@ -8,8 +8,8 @@
  "background_color": "#FFFFFF ",
  "icons": [
    {
-     "src": "images/Funda-logo.png",
-     "sizes": "180x180",
+     "src": "../images/rijksmuseum.png",
+     "sizes": "151×142",
      "type": "image/png"
    }
  ]

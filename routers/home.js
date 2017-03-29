@@ -9,7 +9,7 @@ router.get("/", function(req, resp, next){
     getData(receiveData, '');
 
     function receiveData(data){
-
+        console.log(data.artObjects.webImage);
      resp.render('home',{data:data});
     }
 });
